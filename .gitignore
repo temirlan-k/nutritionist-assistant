@@ -126,4 +126,3 @@ cython_debug/
 
 data
 mongo_data
-src
