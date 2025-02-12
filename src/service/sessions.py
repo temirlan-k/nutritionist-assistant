@@ -18,7 +18,7 @@ from src.helpers.prompts.ai_schedule import get_ai_schedule_prompts
 from fastapi.encoders import jsonable_encoder
 from bson import ObjectId
 
-from t import generate_full_schedule
+from src.helpers.ai_schedule import generate_full_schedule
 
 
 
