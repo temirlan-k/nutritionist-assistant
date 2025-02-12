@@ -1,0 +1,2509 @@
+{
+  "months": [
+    {
+      "month": 1,
+      "weeks": [
+        {
+          "month": 1,
+          "week": 1,
+          "days": [
+            {
+              "date": "2025-02-17",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Banana (1 medium)",
+                    "Almonds (1oz)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken breast (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed vegetables (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked salmon (6oz)",
+                    "Quinoa (3/4 cup)",
+                    "Steamed broccoli (2 cups)"
+                  ],
+                  "calories": 500
+                }
+              ],
+              "total_calories": 1500,
+              "workout": [
+                {
+                  "exercise": "Squats",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Push-ups",
+                  "sets": 3,
+                  "reps": 20,
+                  "calories_burned": 40
+                },
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 3,
+                  "reps": 8,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-18",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Scrambled eggs (3 eggs)",
+                    "Whole grain toast (2 slices)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Turkey breast (6oz)",
+                    "Quinoa salad (1 cup)"
+                  ],
+                  "calories": 550
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Beef stir-fry (200g)",
+                    "Mixed bell peppers (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Deadlifts",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Bench Press",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-19",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein shake (1 serving)",
+                    "Oats (1/2 cup)",
+                    "Blueberries (1/2 cup)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled tuna steak (6oz)",
+                    "Sweet potato (1 medium)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Chicken stir-fry (200g)",
+                    "Brown rice (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Lunges",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 70
+                },
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 130,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-20",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Avocado toast (2 slices)",
+                    "Boiled eggs (2)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled shrimp (150g)",
+                    "Couscous (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Pork tenderloin (6oz)",
+                    "Steamed green beans (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Bent Over Row",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Planks",
+                  "sets": 3,
+                  "reps": "60s",
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 130,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-21",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie (Spinach, Banana, Protein)",
+                    "Chia seeds (1 tbsp)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Chicken wrap with hummus",
+                    "Greens (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Pan-seared trout (6oz)",
+                    "Roasted carrots (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Leg Press",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Tricep Dips",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 110,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-22",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Quinoa porridge (1 cup)",
+                    "Strawberries (1/2 cup)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Lentil soup (1 bowl)",
+                    "Grilled chicken strips (5oz)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Turkey burger (without bun)",
+                    "Small salad"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Cycling",
+                  "sets": 1,
+                  "reps": "30 min",
+                  "calories_burned": 200
+                }
+              ],
+              "total_calories_burned": 200,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-23",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Buckwheat pancakes (3)",
+                    "Berries (1/2 cup)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled beef steak (6oz)",
+                    "Mixed salad (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Vegan chili (1 bowl)",
+                    "Avocado (1/2)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Rest day",
+                  "sets": 0,
+                  "reps": 0,
+                  "calories_burned": 0
+                }
+              ],
+              "total_calories_burned": 0,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 2,
+          "days": [
+            {
+              "date": "2025-02-24",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Banana (1 medium)",
+                    "Almonds (1oz)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Quinoa (1 cup)",
+                    "Mixed greens (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tuna steak (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Spinach (2 cups)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Deadlifts",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 100
+                },
+                {
+                  "exercise": "Overhead Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 160,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-25",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Scrambled eggs (3 eggs)",
+                    "Avocado (1/2)",
+                    "Whole grain toast (2 slices)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Turkey breast (6oz)",
+                    "Brown rice (1 cup)",
+                    "Broccoli (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Beef stir-fry (6oz)",
+                    "Mixed vegetables (2 cups)",
+                    "Brown rice (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 4,
+                  "reps": 8,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Triceps Dips",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-26",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie (Protein powder, Banana, Almond milk)",
+                    "Mixed nuts (1oz)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Lentil soup (2 cups)",
+                    "Quinoa salad (1 cup)",
+                    "Grilled vegetables (1 cup)"
+                  ],
+                  "calories": 500
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": "45s hold",
+                  "calories_burned": 40
+                }
+              ],
+              "total_calories_burned": 120,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-27",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Greek yogurt (Coconut milk based, 1 cup)",
+                    "Blueberries (1/2 cup)",
+                    "Chia seeds (1 tbsp)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Baked salmon (6oz)",
+                    "Quinoa (1 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Chicken curry (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed salad (2 cups)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Leg Press",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Calf raises",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-28",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Strawberries (1/2 cup)",
+                    "Walnuts (1oz)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Stir-fried tofu (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed vegetables (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Quinoa (1 cup)",
+                    "Cauliflower (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 130,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-01",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Omlette (3 eggs, Spinach)",
+                    "Whole grain toast (2 slices)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Chicken breast (6oz)",
+                    "Lentils (1 cup)",
+                    "Tomato cucumber salad (2 cups)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Beef chili (6oz)",
+                    "Brown rice (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Lunges",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Sit-ups",
+                  "sets": 3,
+                  "reps": 20,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 150,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-02",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3 pancakes)",
+                    "Maple syrup (2 tbsp)",
+                    "Mixed berries (1/2 cup)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Roasted turkey (6oz)",
+                    "Quinoa salad (1.5 cups)",
+                    "Steamed kale (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Sautéed shrimp (6oz)",
+                    "Whole wheat pasta (1 cup)",
+                    "Garlic spinach (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Rowing",
+                  "sets": 3,
+                  "reps": "500m",
+                  "calories_burned": 100
+                },
+                {
+                  "exercise": "Cycling",
+                  "sets": 1,
+                  "reps": "30 minutes",
+                  "calories_burned": 150
+                }
+              ],
+              "total_calories_burned": 250,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 2,
+          "days": [
+            {
+              "date": "2025-02-24",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Banana (1 medium)",
+                    "Almonds (1oz)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Quinoa (1 cup)",
+                    "Mixed greens (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tuna steak (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Spinach (2 cups)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Deadlifts",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 100
+                },
+                {
+                  "exercise": "Overhead Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 160,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-25",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Scrambled eggs (3 eggs)",
+                    "Avocado (1/2)",
+                    "Whole grain toast (2 slices)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Turkey breast (6oz)",
+                    "Brown rice (1 cup)",
+                    "Broccoli (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Beef stir-fry (6oz)",
+                    "Mixed vegetables (2 cups)",
+                    "Brown rice (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 4,
+                  "reps": 8,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Triceps Dips",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-26",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie (Protein powder, Banana, Almond milk)",
+                    "Mixed nuts (1oz)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Lentil soup (2 cups)",
+                    "Quinoa salad (1 cup)",
+                    "Grilled vegetables (1 cup)"
+                  ],
+                  "calories": 500
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": "45s hold",
+                  "calories_burned": 40
+                }
+              ],
+              "total_calories_burned": 120,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-27",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Greek yogurt (Coconut milk based, 1 cup)",
+                    "Blueberries (1/2 cup)",
+                    "Chia seeds (1 tbsp)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Baked salmon (6oz)",
+                    "Quinoa (1 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Chicken curry (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed salad (2 cups)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1550,
+              "workout": [
+                {
+                  "exercise": "Leg Press",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Calf raises",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-02-28",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Strawberries (1/2 cup)",
+                    "Walnuts (1oz)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Stir-fried tofu (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed vegetables (2 cups)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Quinoa (1 cup)",
+                    "Cauliflower (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 130,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-01",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Omlette (3 eggs, Spinach)",
+                    "Whole grain toast (2 slices)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Chicken breast (6oz)",
+                    "Lentils (1 cup)",
+                    "Tomato cucumber salad (2 cups)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Beef chili (6oz)",
+                    "Brown rice (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Lunges",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Sit-ups",
+                  "sets": 3,
+                  "reps": 20,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 150,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-02",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3 pancakes)",
+                    "Maple syrup (2 tbsp)",
+                    "Mixed berries (1/2 cup)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Roasted turkey (6oz)",
+                    "Quinoa salad (1.5 cups)",
+                    "Steamed kale (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Sautéed shrimp (6oz)",
+                    "Whole wheat pasta (1 cup)",
+                    "Garlic spinach (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Rowing",
+                  "sets": 3,
+                  "reps": "500m",
+                  "calories_burned": 100
+                },
+                {
+                  "exercise": "Cycling",
+                  "sets": 1,
+                  "reps": "30 minutes",
+                  "calories_burned": 150
+                }
+              ],
+              "total_calories_burned": 250,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 3,
+          "days": [
+            {
+              "date": "2025-03-03",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Apple (1 medium)",
+                    "Walnuts (1oz)"
+                  ],
+                  "calories": 420
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Turkey breast (6oz)",
+                    "Quinoa (1 cup)",
+                    "Spinach salad (2 cups)"
+                  ],
+                  "calories": 610
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1580,
+              "workout": [
+                {
+                  "exercise": "Deadlift",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 3,
+                  "reps": 8,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-04",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Scrambled eggs (3 eggs)",
+                    "Avocado (1/2 medium)",
+                    "Whole grain toast (1 slice)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed greens (1 cup)"
+                  ],
+                  "calories": 620
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tofu stir-fry (200g)",
+                    "Broccoli (1 cup)",
+                    "Carrots (1 cup)"
+                  ],
+                  "calories": 540
+                }
+              ],
+              "total_calories": 1610,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 70
+                },
+                {
+                  "exercise": "Lateral Raises",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 120,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-05",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein shake (1 serving)",
+                    "Almond butter (2 tbsp)",
+                    "Banana (1 medium)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Beef steak (5oz)",
+                    "Quinoa (1 cup)",
+                    "Grilled zucchini (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled salmon (5oz)",
+                    "Bulgur (3/4 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 570
+                }
+              ],
+              "total_calories": 1720,
+              "workout": [
+                {
+                  "exercise": "Leg Press",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Chest Fly",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-06",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Greek yogurt (soy-based, 1 cup)",
+                    "Berries (1 cup)",
+                    "Granola (1/4 cup)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Lentil soup (2 cups)",
+                    "Whole wheat roll (1)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked tilapia (6oz)",
+                    "Sweet potato mash (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 580
+                }
+              ],
+              "total_calories": 1630,
+              "workout": [
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Tricep Dips",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 110,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-07",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3 pancakes)",
+                    "Maple syrup (2 tbsp)"
+                  ],
+                  "calories": 480
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Chicken stir-fry (6oz)",
+                    "Mixed vegetables (2 cups)",
+                    "Brown rice (1 cup)"
+                  ],
+                  "calories": 640
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Pork tenderloin (5oz)",
+                    "Mashed potatoes (1 cup)",
+                    "Roasted carrots (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1720,
+              "workout": [
+                {
+                  "exercise": "Bent-over Row",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-08",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie (protein powder, spinach, banana, almond milk)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken salad (6oz chicken)",
+                    "Mixed greens (2 cups)",
+                    "Avocado (1/2)"
+                  ],
+                  "calories": 630
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Turkey chili (2 cups)",
+                    "Whole grain cornbread (1 piece)"
+                  ],
+                  "calories": 570
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Cardio (running)",
+                  "sets": 1,
+                  "reps": "30 min",
+                  "calories_burned": 300
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": "1 min",
+                  "calories_burned": 30
+                }
+              ],
+              "total_calories_burned": 330,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-09",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Whole grain toast (2 slices)",
+                    "Poached eggs (2)",
+                    "Tomato (1 medium)"
+                  ],
+                  "calories": 480
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Veggie burger (1)",
+                    "Whole wheat bun (1)",
+                    "Sweet potato fries (1 cup)"
+                  ],
+                  "calories": 620
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Roast beef (5oz)",
+                    "Brown rice (1 cup)",
+                    "Grilled bell peppers (1 cup)"
+                  ],
+                  "calories": 590
+                }
+              ],
+              "total_calories": 1690,
+              "workout": [
+                {
+                  "exercise": "Yoga",
+                  "sets": 1,
+                  "reps": "45 min",
+                  "calories_burned": 180
+                },
+                {
+                  "exercise": "Light jog",
+                  "sets": 1,
+                  "reps": "20 min",
+                  "calories_burned": 150
+                }
+              ],
+              "total_calories_burned": 330,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 3,
+          "days": [
+            {
+              "date": "2025-03-03",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Apple (1 medium)",
+                    "Walnuts (1oz)"
+                  ],
+                  "calories": 420
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Turkey breast (6oz)",
+                    "Quinoa (1 cup)",
+                    "Spinach salad (2 cups)"
+                  ],
+                  "calories": 610
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1580,
+              "workout": [
+                {
+                  "exercise": "Deadlift",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 3,
+                  "reps": 8,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-04",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Scrambled eggs (3 eggs)",
+                    "Avocado (1/2 medium)",
+                    "Whole grain toast (1 slice)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed greens (1 cup)"
+                  ],
+                  "calories": 620
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tofu stir-fry (200g)",
+                    "Broccoli (1 cup)",
+                    "Carrots (1 cup)"
+                  ],
+                  "calories": 540
+                }
+              ],
+              "total_calories": 1610,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 70
+                },
+                {
+                  "exercise": "Lateral Raises",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 120,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-05",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein shake (1 serving)",
+                    "Almond butter (2 tbsp)",
+                    "Banana (1 medium)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Beef steak (5oz)",
+                    "Quinoa (1 cup)",
+                    "Grilled zucchini (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled salmon (5oz)",
+                    "Bulgur (3/4 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 570
+                }
+              ],
+              "total_calories": 1720,
+              "workout": [
+                {
+                  "exercise": "Leg Press",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 90
+                },
+                {
+                  "exercise": "Chest Fly",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-06",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Greek yogurt (soy-based, 1 cup)",
+                    "Berries (1 cup)",
+                    "Granola (1/4 cup)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Lentil soup (2 cups)",
+                    "Whole wheat roll (1)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked tilapia (6oz)",
+                    "Sweet potato mash (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 580
+                }
+              ],
+              "total_calories": 1630,
+              "workout": [
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Tricep Dips",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 110,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-07",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3 pancakes)",
+                    "Maple syrup (2 tbsp)"
+                  ],
+                  "calories": 480
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Chicken stir-fry (6oz)",
+                    "Mixed vegetables (2 cups)",
+                    "Brown rice (1 cup)"
+                  ],
+                  "calories": 640
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Pork tenderloin (5oz)",
+                    "Mashed potatoes (1 cup)",
+                    "Roasted carrots (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1720,
+              "workout": [
+                {
+                  "exercise": "Bent-over Row",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 80
+                },
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 3,
+                  "reps": 12,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 140,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-08",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie (protein powder, spinach, banana, almond milk)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken salad (6oz chicken)",
+                    "Mixed greens (2 cups)",
+                    "Avocado (1/2)"
+                  ],
+                  "calories": 630
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Turkey chili (2 cups)",
+                    "Whole grain cornbread (1 piece)"
+                  ],
+                  "calories": 570
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Cardio (running)",
+                  "sets": 1,
+                  "reps": "30 min",
+                  "calories_burned": 300
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": "1 min",
+                  "calories_burned": 30
+                }
+              ],
+              "total_calories_burned": 330,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-09",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Whole grain toast (2 slices)",
+                    "Poached eggs (2)",
+                    "Tomato (1 medium)"
+                  ],
+                  "calories": 480
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Veggie burger (1)",
+                    "Whole wheat bun (1)",
+                    "Sweet potato fries (1 cup)"
+                  ],
+                  "calories": 620
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Roast beef (5oz)",
+                    "Brown rice (1 cup)",
+                    "Grilled bell peppers (1 cup)"
+                  ],
+                  "calories": 590
+                }
+              ],
+              "total_calories": 1690,
+              "workout": [
+                {
+                  "exercise": "Yoga",
+                  "sets": 1,
+                  "reps": "45 min",
+                  "calories_burned": 180
+                },
+                {
+                  "exercise": "Light jog",
+                  "sets": 1,
+                  "reps": "20 min",
+                  "calories_burned": 150
+                }
+              ],
+              "total_calories_burned": 330,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 4,
+          "days": [
+            {
+              "date": "2025-03-10",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Mixed berries (1 cup)",
+                    "Chia seeds (1 tbsp)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled turkey breast (6oz)",
+                    "Quinoa (1 cup)",
+                    "Spinach salad (2 cups)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked cod (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 4,
+                  "reps": 8,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Deadlifts",
+                  "sets": 4,
+                  "reps": 6,
+                  "calories_burned": 70
+                },
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 180,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-11",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie with spinach (1 cup)",
+                    "Banana (1 medium)",
+                    "Peanut butter (2 tbsp)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed vegetables (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Chicken stir-fry (6oz)",
+                    "Cauliflower rice (1 cup)",
+                    "Bell peppers (1 cup)"
+                  ],
+                  "calories": 500
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Running",
+                  "sets": 1,
+                  "reps": 30,
+                  "calories_burned": 300
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": 1,
+                  "calories_burned": 40
+                }
+              ],
+              "total_calories_burned": 340,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-12",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Egg whites (4)",
+                    "Whole grain toast (2 slices)",
+                    "Avocado (1/2)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Beef steak (6oz)",
+                    "Quinoa salad (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 700
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled chicken thighs (6oz)",
+                    "Red potatoes (1 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Tricep Dips",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 8,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 160,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-13",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Almond milk (1 cup)",
+                    "Walnuts (1/4 cup)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled salmon (6oz)",
+                    "Couscous (1 cup)",
+                    "Zucchini (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Turkey meatballs (8oz)",
+                    "Whole wheat pasta (1 cup)",
+                    "Marinara sauce (1/2 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1750,
+              "workout": [
+                {
+                  "exercise": "Cycling",
+                  "sets": 1,
+                  "reps": 45,
+                  "calories_burned": 400
+                }
+              ],
+              "total_calories_burned": 400,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-14",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Chia pudding (1 cup)",
+                    "Berry compote (1/2 cup)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Kale (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tuna steak (6oz)",
+                    "Lentils (1 cup)",
+                    "Steamed carrots (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Lunges",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Push-ups",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Mountain Climbers",
+                  "sets": 3,
+                  "reps": 20,
+                  "calories_burned": 70
+                }
+              ],
+              "total_calories_burned": 180,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-15",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3)",
+                    "Maple syrup (2 tbsp)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Tofu stir-fry (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed veggies (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked chicken breast (6oz)",
+                    "Mashed potatoes (1 cup)",
+                    "Green peas (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Yoga",
+                  "sets": 1,
+                  "reps": 60,
+                  "calories_burned": 200
+                }
+              ],
+              "total_calories_burned": 200,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-16",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie with almond milk (1 cup)",
+                    "Protein powder (1 scoop)",
+                    "Banana (1 medium)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled beef (6oz)",
+                    "Quinoa (1 cup)",
+                    "Roasted veggies (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked haddock (6oz)",
+                    "Wild rice (1 cup)",
+                    "Brussels sprouts (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Swimming",
+                  "sets": 1,
+                  "reps": 30,
+                  "calories_burned": 250
+                }
+              ],
+              "total_calories_burned": 250,
+              "status": "not_done"
+            }
+          ]
+        },
+        {
+          "month": 1,
+          "week": 4,
+          "days": [
+            {
+              "date": "2025-03-10",
+              "day_number": 1,
+              "day_of_week": "Monday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Mixed berries (1 cup)",
+                    "Chia seeds (1 tbsp)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled turkey breast (6oz)",
+                    "Quinoa (1 cup)",
+                    "Spinach salad (2 cups)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked cod (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Asparagus (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Bench Press",
+                  "sets": 4,
+                  "reps": 8,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Deadlifts",
+                  "sets": 4,
+                  "reps": 6,
+                  "calories_burned": 70
+                },
+                {
+                  "exercise": "Pull-ups",
+                  "sets": 3,
+                  "reps": 10,
+                  "calories_burned": 50
+                }
+              ],
+              "total_calories_burned": 180,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-11",
+              "day_number": 2,
+              "day_of_week": "Tuesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie with spinach (1 cup)",
+                    "Banana (1 medium)",
+                    "Peanut butter (2 tbsp)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled shrimp (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed vegetables (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Chicken stir-fry (6oz)",
+                    "Cauliflower rice (1 cup)",
+                    "Bell peppers (1 cup)"
+                  ],
+                  "calories": 500
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Running",
+                  "sets": 1,
+                  "reps": 30,
+                  "calories_burned": 300
+                },
+                {
+                  "exercise": "Plank",
+                  "sets": 3,
+                  "reps": 1,
+                  "calories_burned": 40
+                }
+              ],
+              "total_calories_burned": 340,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-12",
+              "day_number": 3,
+              "day_of_week": "Wednesday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Egg whites (4)",
+                    "Whole grain toast (2 slices)",
+                    "Avocado (1/2)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Beef steak (6oz)",
+                    "Quinoa salad (1 cup)",
+                    "Steamed broccoli (1 cup)"
+                  ],
+                  "calories": 700
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Grilled chicken thighs (6oz)",
+                    "Red potatoes (1 cup)",
+                    "Green beans (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Bicep Curls",
+                  "sets": 4,
+                  "reps": 10,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Tricep Dips",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Shoulder Press",
+                  "sets": 3,
+                  "reps": 8,
+                  "calories_burned": 60
+                }
+              ],
+              "total_calories_burned": 160,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-13",
+              "day_number": 4,
+              "day_of_week": "Thursday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Oatmeal (1 cup)",
+                    "Almond milk (1 cup)",
+                    "Walnuts (1/4 cup)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled salmon (6oz)",
+                    "Couscous (1 cup)",
+                    "Zucchini (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Turkey meatballs (8oz)",
+                    "Whole wheat pasta (1 cup)",
+                    "Marinara sauce (1/2 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1750,
+              "workout": [
+                {
+                  "exercise": "Cycling",
+                  "sets": 1,
+                  "reps": 45,
+                  "calories_burned": 400
+                }
+              ],
+              "total_calories_burned": 400,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-14",
+              "day_number": 5,
+              "day_of_week": "Friday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Chia pudding (1 cup)",
+                    "Berry compote (1/2 cup)"
+                  ],
+                  "calories": 400
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled chicken (6oz)",
+                    "Sweet potato (1 medium)",
+                    "Kale (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Tuna steak (6oz)",
+                    "Lentils (1 cup)",
+                    "Steamed carrots (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1600,
+              "workout": [
+                {
+                  "exercise": "Lunges",
+                  "sets": 4,
+                  "reps": 12,
+                  "calories_burned": 60
+                },
+                {
+                  "exercise": "Push-ups",
+                  "sets": 3,
+                  "reps": 15,
+                  "calories_burned": 50
+                },
+                {
+                  "exercise": "Mountain Climbers",
+                  "sets": 3,
+                  "reps": 20,
+                  "calories_burned": 70
+                }
+              ],
+              "total_calories_burned": 180,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-15",
+              "day_number": 6,
+              "day_of_week": "Saturday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Protein pancakes (3)",
+                    "Maple syrup (2 tbsp)"
+                  ],
+                  "calories": 500
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Tofu stir-fry (6oz)",
+                    "Brown rice (1 cup)",
+                    "Mixed veggies (1 cup)"
+                  ],
+                  "calories": 600
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked chicken breast (6oz)",
+                    "Mashed potatoes (1 cup)",
+                    "Green peas (1 cup)"
+                  ],
+                  "calories": 600
+                }
+              ],
+              "total_calories": 1700,
+              "workout": [
+                {
+                  "exercise": "Yoga",
+                  "sets": 1,
+                  "reps": 60,
+                  "calories_burned": 200
+                }
+              ],
+              "total_calories_burned": 200,
+              "status": "not_done"
+            },
+            {
+              "date": "2025-03-16",
+              "day_number": 7,
+              "day_of_week": "Sunday",
+              "meals": [
+                {
+                  "meal": "breakfast",
+                  "food": [
+                    "Smoothie with almond milk (1 cup)",
+                    "Protein powder (1 scoop)",
+                    "Banana (1 medium)"
+                  ],
+                  "calories": 450
+                },
+                {
+                  "meal": "lunch",
+                  "food": [
+                    "Grilled beef (6oz)",
+                    "Quinoa (1 cup)",
+                    "Roasted veggies (1 cup)"
+                  ],
+                  "calories": 650
+                },
+                {
+                  "meal": "dinner",
+                  "food": [
+                    "Baked haddock (6oz)",
+                    "Wild rice (1 cup)",
+                    "Brussels sprouts (1 cup)"
+                  ],
+                  "calories": 550
+                }
+              ],
+              "total_calories": 1650,
+              "workout": [
+                {
+                  "exercise": "Swimming",
+                  "sets": 1,
+                  "reps": 30,
+                  "calories_burned": 250
+                }
+              ],
+              "total_calories_burned": 250,
+              "status": "not_done"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
