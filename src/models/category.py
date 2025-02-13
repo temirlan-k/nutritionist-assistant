@@ -1,3 +1,4 @@
+
 from beanie import Document, Link
 from typing import Optional
 
@@ -11,4 +12,3 @@ class Category(Document):
         collection = "categories"
 
 
-    

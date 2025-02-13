@@ -1,19 +1,9 @@
+from beanie import Document
+from pydantic import BaseModel
+from typing import Optional
+from bson import ObjectId
 import datetime
-from beanie import Document, Link
-from typing import List, Optional
 
-class User(Document):
-    first_name: str
-    last_name: str
-    email: str
-    password: str
-    physical_data: Link["PhysicalData"]
-
-
-    class Settings:
-        collection = "users"
-
-        
 class PhysicalData(Document):
     weight: float
     height: float
@@ -23,6 +13,12 @@ class PhysicalData(Document):
     class Settings:
         collection = "physical_data"
 
+class User(Document):
+    first_name: str
+    last_name: str
+    email: str
+    password: str
+    physical_data_id: Optional[str]
 
-User.model_rebuild()
-PhysicalData.model_rebuild()
+    class Settings:
+        collection = "users"
