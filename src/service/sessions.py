@@ -1,8 +1,17 @@
 from datetime import datetime
 from bson import ObjectId
-from fastapi import BackgroundTasks, HTTPException
+from fastapi import BackgroundTasks, HTTPException, Response
 from typing import List, Dict, Any, Optional
 from logging import getLogger
+from reportlab.lib.pagesizes import letter
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter, landscape
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer
+from io import BytesIO
+from reportlab.lib import colors
+from reportlab.lib.styles import getSampleStyleSheet
+from io import BytesIO
 from src.models.category import Category
 from src.models.sessions import DayPlan, DayStatus, SessionStatus, UserCategorySession
 from src.models.user import PhysicalData, User
@@ -206,5 +215,123 @@ class UserCategorySessionService:
         physical_data.weight = weight_after
         await session.save()
         return progress_analysis
+    async def generate_pdf(self, session_id: str):
+        session = await UserCategorySession.get(ObjectId(session_id))
+        if not session:
+            raise HTTPException(status_code=404, detail="Session not found")
+        
+        day_plans = await DayPlan.find({"_id": {"$in": [ObjectId(id) for id in session.ai_generated_plan_table_ids]}}).to_list()
+        if not day_plans:
+            raise HTTPException(status_code=404, detail="No data found for this session")
+        
+        grouped_data = {}
+        for day in day_plans:
+            key = (day.month, day.week)
+            if key not in grouped_data:
+                grouped_data[key] = []
+            grouped_data[key].append(day)
 
-    
+        # Create PDF with landscape orientation and larger page size
+        buffer = BytesIO()
+        pdf = SimpleDocTemplate(
+            buffer,
+            pagesize=landscape(letter),
+            rightMargin=20,
+            leftMargin=20,
+            topMargin=20,
+            bottomMargin=20
+        )
+        
+        elements = []
+        styles = getSampleStyleSheet()
+        
+        # Create a custom style for table cells
+        styles.add(ParagraphStyle(
+            name='TableCell',
+            parent=styles['Normal'],
+            fontSize=8,
+            leading=10,
+            wordWrap='CJK'  # Enable better word wrapping
+        ))
+        
+        for (month, week), days in sorted(grouped_data.items()):
+            elements.append(Paragraph(f"Month {month} - Week {week}", styles['Title']))
+            
+            table_data = [["Day", "Breakfast", "Lunch", "Dinner", "Total\nCalories", "Workout", "Calories\nBurned", "Status"]]
+            
+            for day in days:
+                # Process meals with proper text wrapping
+                def format_meal(meal_type):
+                    meals = [m for m in day.meals if m["meal"] == meal_type]
+                    if not meals:
+                        return ""
+                    foods = []
+                    for m in meals:
+                        if isinstance(m["food"], list):
+                            foods.extend(m["food"])
+                        else:
+                            foods.append(str(m["food"]))
+                    return Paragraph("\n".join(foods), styles['TableCell'])
+
+                # Format workouts with proper text wrapping
+                workouts = Paragraph(
+                    "\n".join(f"{w['exercise']} ({w['calories_burned']} kcal)" 
+                            for w in day.workout),
+                    styles['TableCell']
+                )
+
+                row = [
+                    Paragraph(day.day_of_week, styles['TableCell']),
+                    format_meal("breakfast"),
+                    format_meal("lunch"),
+                    format_meal("dinner"),
+                    Paragraph(str(day.total_calories), styles['TableCell']),
+                    workouts,
+                    Paragraph(str(day.total_calories_burned), styles['TableCell']),
+                    Paragraph(day.status.value, styles['TableCell'])
+                ]
+                table_data.append(row)
+
+            # Adjusted column widths based on content importance
+            available_width = pdf.width
+            col_widths = [
+                available_width * 0.08,  # Day
+                available_width * 0.17,  # Breakfast
+                available_width * 0.17,  # Lunch
+                available_width * 0.17,  # Dinner
+                available_width * 0.08,  # Total Calories
+                available_width * 0.20,  # Workout
+                available_width * 0.08,  # Calories Burned
+                available_width * 0.05   # Status
+            ]
+
+            table = Table(table_data, colWidths=col_widths, repeatRows=1)
+            table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), colors.grey),
+                ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
+                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                ('FONTSIZE', (0, 0), (-1, -1), 8),
+                ('BOTTOMPADDING', (0, 0), (-1, 0), 12),
+                ('GRID', (0, 0), (-1, -1), 1, colors.black),
+                ('VALIGN', (0, 0), (-1, -1), 'TOP'),  # Align text to top
+                ('LEFTPADDING', (0, 0), (-1, -1), 3),
+                ('RIGHTPADDING', (0, 0), (-1, -1), 3),
+                ('TOPPADDING', (0, 0), (-1, -1), 3),
+                ('BOTTOMPADDING', (0, 0), (-1, -1), 3),
+            ]))
+            
+            elements.append(table)
+            elements.append(Spacer(1, 12))
+
+        if session.result:
+            elements.append(Paragraph("Summary", styles['Title']))
+            elements.append(Paragraph(session.result.get("summary", "No summary available"), styles['Normal']))
+
+        pdf.build(elements)
+        buffer.seek(0)
+        return Response(
+            buffer.getvalue(), 
+            media_type="application/pdf", 
+            headers={"Content-Disposition": "attachment; filename=meal_plan.pdf"}
+        )
