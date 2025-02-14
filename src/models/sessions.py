@@ -1,5 +1,5 @@
 from beanie import Document, before_event
-from typing import List, Dict, Optional
+from typing import Any, List, Dict, Optional
 from enum import Enum
 import datetime
 from bson import ObjectId
@@ -13,11 +13,13 @@ class DayStatus(str, Enum):
 class SessionStatus(str, Enum):
     PENDING = "pending"
     PROCESSING = "processing"
+    COMPLETED = "completed"
     ACTIVE = "active"
     FAILED = "failed"
 
 class DayPlan(Document):
-    week:str|None = None
+    month:Optional[str|int|None] = None
+    week:Optional[str|int|None ]= None
     day_number: int
     day_of_week: str
     date: datetime.datetime
@@ -44,6 +46,7 @@ class UserCategorySession(Document):
     status: SessionStatus = SessionStatus.PENDING
     error_message: Optional[str] = None
     last_updated: datetime.datetime = datetime.datetime.utcnow()
+    result: Optional[Any] = None
 
     class Settings:
         collection = "user_category_sessions"

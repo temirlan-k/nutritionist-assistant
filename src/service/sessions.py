@@ -51,8 +51,10 @@ class UserCategorySessionService:
         try:
             print("Processing week data...")
             week = week_data["week"]
+            month = week_data["month"]
             for day in week_data["days"]:
                 day_plan = DayPlan(
+                    month=month,
                     week=week,
                     day_number=day["day_number"],
                     day_of_week=day["day_of_week"],
@@ -183,3 +185,26 @@ class UserCategorySessionService:
             setattr(day_plan, field, value)
         await day_plan.save()
         return day_plan
+
+    async def complete_session(self, session_id: str, user_id:str,weight_after:float,) -> Dict[str, Any]:
+        session = await UserCategorySession.find_one({"_id": ObjectId(session_id)})
+        if session is None:
+            raise HTTPException(status_code=404, detail="Session not found")
+
+        day_plans = await DayPlan.find({"_id": {"$in": [ObjectId(id) for id in session.ai_generated_plan_table_ids]}}).sort("date").to_list()
+        user = await User.find_one({"_id": ObjectId(user_id)})
+        physical_data = await PhysicalData.find_one({"_id": ObjectId(user.physical_data_id)})
+        category = await Category.find_one({"_id": ObjectId(session.category_id)})
+
+        if not user or not physical_data or not category:
+            raise HTTPException(status_code=404, detail="User, physical data, or category not found")
+
+        progress_analysis = await self.schedule_generator.analyze_progress(user, session, category, physical_data, weight_after,day_plans)
+        session.status = SessionStatus.COMPLETED
+        session.result = progress_analysis
+        session.last_updated = datetime.utcnow()
+        physical_data.weight = weight_after
+        await session.save()
+        return progress_analysis
+
+    

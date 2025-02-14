@@ -6,7 +6,7 @@ from src.service.sessions import UserCategorySessionService
 
 user_session_router = APIRouter()
 
-@user_session_router.get("/sessions")
+@user_session_router.get("/get")
 async def get_sessions(
     token: dict = Depends(get_current_user),
     session_service: UserCategorySessionService = Depends(UserCategorySessionService)
@@ -15,7 +15,7 @@ async def get_sessions(
     return await session_service.get_sessions(token.get("sub"))
 
 
-@user_session_router.post("/sessions")
+@user_session_router.post("/create")
 async def create_session(
     req: SessionCreateReq,
     bg_tasks: BackgroundTasks,
@@ -24,7 +24,7 @@ async def create_session(
 ):
     return await session_service.create_session(bg_tasks,token.get('sub'),req)
 
-@user_session_router.get("/sessions/{session_id}")
+@user_session_router.get("/{session_id}")
 async def get_session_by_id(
     session_id: str,
     offset: int = 0,
@@ -40,3 +40,19 @@ async def update_session_day_plan(
     session_service: UserCategorySessionService = Depends(UserCategorySessionService)
 ):
     return await session_service.update_dayplan(session_id,day_plan_id,req)
+
+@user_session_router.get("/compete/{session_id}")
+async def compete_session(
+    session_id: str,
+    weight_after: float,
+    token: dict = Depends(get_current_user),
+    session_service: UserCategorySessionService = Depends(UserCategorySessionService)
+):
+    return await session_service.complete_session(session_id,token.get('sub'),weight_after)
+
+@user_session_router.get("/generate-pdf/{session_id}")
+async def generate_pdf(
+    session_id: str,
+    session_service: UserCategorySessionService = Depends(UserCategorySessionService)
+):
+    return await session_service.generate_pdf(session_id)

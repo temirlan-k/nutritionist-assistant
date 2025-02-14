@@ -1,8 +1,11 @@
 import asyncio
 import json
 from openai import AsyncOpenAI
-from src.models.user import PhysicalData
-from typing import  Optional
+from src.helpers.prompts.aI_schedule_analyzer import get_ai_progress_analysis_prompt
+from src.models.category import Category
+from src.models.sessions import DayPlan, UserCategorySession
+from src.models.user import PhysicalData, User
+from typing import  Dict, List, Optional
 from logging import getLogger
 from src.helpers.prompts.ai_schedule import get_ai_schedule_prompts,fetch_weekly_schedule_prompt
 
@@ -14,7 +17,39 @@ class AIScheduleGenerator:
             base_url=base_url,
             api_key=api_key,
         )
-        
+    
+    async def analyze_progress(
+        self,
+        user: User,
+        user_data: UserCategorySession,
+        category: Category,
+        physical_data: PhysicalData,
+        weight_after: int,
+        day_plans: List[DayPlan|dict]
+    ) -> Optional[dict]:
+        """Анализирует прогресс пользователя после завершения плана."""
+        try:
+            prompt = await get_ai_progress_analysis_prompt(user_data, category, user, physical_data, weight_after,day_plans)
+
+            completion = await self.client.chat.completions.create(
+                model="openai/gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are an AI-powered fitness and nutrition analyst."},
+                    {"role": "user", "content": prompt},
+                ],
+            )
+
+            response = completion.choices[0].message.content
+            analysis = json.loads(response) 
+
+            return analysis
+
+        except json.JSONDecodeError as e:
+            logger.error(f"Invalid JSON response from AI: {e}")
+            return None
+        except Exception as e:
+            logger.error(f"Error during progress analysis: {e}")
+            raise
 
 
     async def fetch_weekly_schedule(

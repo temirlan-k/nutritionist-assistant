@@ -54,7 +54,8 @@ Your task is to generate a structured {months} month meal and fitness schedule b
     {{
       "month": 1,
       "weeks": [
-        {{
+        {{ 
+          "month": 1,
           "week": 1,
           "days": [
             {{
