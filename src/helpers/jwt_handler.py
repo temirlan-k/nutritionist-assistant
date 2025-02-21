@@ -13,7 +13,6 @@ class JWT:
 
     @staticmethod
     def encode_access_token(payload: dict,algorithm='HS256') -> str:
-        print(JWT.secret_key)
         expire = datetime.datetime.utcnow() + datetime.timedelta(minutes=JWT.access_expire_minutes)
         payload.update({"exp": expire, "type": "access"})  
         return encode(payload, JWT.secret_key, algorithm=algorithm)
