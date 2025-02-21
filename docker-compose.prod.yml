@@ -1,0 +1,25 @@
+services:
+
+  # Service: backend
+  backend:
+    build: .
+    ports:
+      - "9001:9001"
+    volumes:
+      - .:/app
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/nutrition
+      - SECRET_KEY=secret123123
+    depends_on:
+      - mongodb
+        
+
+  # Service: mongodb
+  mongodb:
+    image: mongo:latest
+    logging:
+      driver: "none"
+    ports:
+      - "27020:27017"
+    volumes:
+      - ./data:/data/db
