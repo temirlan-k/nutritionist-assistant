@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 from openai import AsyncOpenAI
 from src.helpers.prompts.aI_schedule_analyzer import get_ai_progress_analysis_prompt
 from src.models.category import Category
@@ -12,7 +13,7 @@ from src.helpers.prompts.ai_schedule import get_ai_schedule_prompts,fetch_weekly
 logger = getLogger(__name__)
 
 class AIScheduleGenerator:
-    def __init__(self, api_key: str = "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", base_url: str = "https://openrouter.ai/api/v1"):
+    def __init__(self, api_key: str = os.getenv('OPENAI_API_KEY'), base_url: str = "https://openrouter.ai/api/v1"):
         self.client = AsyncOpenAI(
             base_url=base_url,
             api_key=api_key,
