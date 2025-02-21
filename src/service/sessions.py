@@ -215,6 +215,9 @@ class UserCategorySessionService:
         physical_data.weight = weight_after
         await session.save()
         return progress_analysis
+    
+
+    
     async def generate_pdf(self, session_id: str):
         session = await UserCategorySession.get(ObjectId(session_id))
         if not session:
@@ -292,7 +295,6 @@ class UserCategorySessionService:
                 ]
                 table_data.append(row)
 
-            # Adjusted column widths based on content importance
             available_width = pdf.width
             col_widths = [
                 available_width * 0.08,  # Day

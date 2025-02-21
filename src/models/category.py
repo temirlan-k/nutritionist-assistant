@@ -6,7 +6,6 @@ from typing import Optional
 class Category(Document):
     name: str
     description: str
-    prompt: str
 
     class Settings:
         collection = "categories"
