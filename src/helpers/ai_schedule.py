@@ -13,7 +13,11 @@ from src.helpers.prompts.ai_schedule import get_ai_schedule_prompts,fetch_weekly
 logger = getLogger(__name__)
 
 class AIScheduleGenerator:
-    def __init__(self, api_key: str = os.getenv('OPENAI_API_KEY'), base_url: str = "https://openrouter.ai/api/v1"):
+    def __init__(self, api_key: str = None, base_url: str = "https://openrouter.ai/api/v1"):
+        if api_key is None:
+            api_key = os.environ.get("OPENAI_API_KEY")
+        if not api_key:
+            raise ValueError("OPENAI_API_KEY не установлен.")
         self.client = AsyncOpenAI(
             base_url=base_url,
             api_key=api_key,
