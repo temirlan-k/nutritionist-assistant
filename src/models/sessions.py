@@ -1,7 +1,8 @@
-from beanie import Document, before_event
-from typing import Any, List, Dict, Optional
-from enum import Enum
 import datetime
+from enum import Enum
+from typing import Any, Dict, List, Optional
+
+from beanie import Document, before_event
 from bson import ObjectId
 
 

@@ -1,8 +1,9 @@
-from src.api.v1.auth import auth_router
-from src.api.v1.profile import profile_router
-from src.api.v1.category import category_router
-from src.api.v1.sessions import user_session_router
 from fastapi import APIRouter
+
+from src.api.v1.auth import auth_router
+from src.api.v1.category import category_router
+from src.api.v1.profile import profile_router
+from src.api.v1.sessions import user_session_router
 
 api_router = APIRouter(prefix="/api/v1")
 

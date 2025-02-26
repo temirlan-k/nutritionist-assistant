@@ -1,13 +1,13 @@
 from beanie import Link, PydanticObjectId
 from bson import ObjectId
 from fastapi import HTTPException
-from src.schemas.req.profile import UserProfileUpdateReq, PhysicalDataUpdateReq
-from src.schemas.req.user import UserCreateReq, UserLoginReq
-from src.models.user import User, PhysicalData
+from fastapi.encoders import jsonable_encoder
+
 from src.helpers.jwt_handler import JWT
 from src.helpers.password import PasswordHandler
-
-from fastapi.encoders import jsonable_encoder
+from src.models.user import PhysicalData, User
+from src.schemas.req.profile import PhysicalDataUpdateReq, UserProfileUpdateReq
+from src.schemas.req.user import UserCreateReq, UserLoginReq
 
 
 class ProfileService:

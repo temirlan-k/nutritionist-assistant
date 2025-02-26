@@ -1,9 +1,9 @@
-from datetime import datetime, timedelta
 import json
+from datetime import datetime, timedelta
 from typing import List
 
-from src.models.user import User, PhysicalData
 from src.models.category import Category
+from src.models.user import PhysicalData, User
 
 
 async def get_ai_schedule_prompts(

@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 
-from src.service.profile import ProfileService
 from src.core.auth_middleware import get_current_user
 from src.schemas.req.profile import PhysicalDataUpdateReq, UserProfileUpdateReq
+from src.service.profile import ProfileService
 
 profile_router = APIRouter()
 

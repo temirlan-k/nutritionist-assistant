@@ -1,5 +1,6 @@
-from beanie import Document, Link
 from typing import Optional
+
+from beanie import Document, Link
 
 
 class Category(Document):

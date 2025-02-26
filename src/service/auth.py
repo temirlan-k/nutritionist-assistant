@@ -1,9 +1,10 @@
 from bson import ObjectId
 from fastapi import HTTPException
-from src.schemas.req.user import UserCreateReq, UserLoginReq
-from src.models.user import User, PhysicalData
+
 from src.helpers.jwt_handler import JWT
 from src.helpers.password import PasswordHandler
+from src.models.user import PhysicalData, User
+from src.schemas.req.user import UserCreateReq, UserLoginReq
 
 
 class AuthService:

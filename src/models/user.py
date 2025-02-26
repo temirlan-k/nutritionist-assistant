@@ -1,8 +1,9 @@
-from beanie import Document
-from pydantic import BaseModel
-from typing import Optional
-from bson import ObjectId
 import datetime
+from typing import Optional
+
+from beanie import Document
+from bson import ObjectId
+from pydantic import BaseModel
 
 
 class PhysicalData(Document):

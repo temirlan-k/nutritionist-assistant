@@ -1,8 +1,8 @@
-from fastapi import Depends, Request, HTTPException
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi import Depends, HTTPException, Request
+from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 
-from src.helpers.jwt_handler import JWT
 from src.core.settings import settings
+from src.helpers.jwt_handler import JWT
 
 
 class JWTBearer(HTTPBearer):

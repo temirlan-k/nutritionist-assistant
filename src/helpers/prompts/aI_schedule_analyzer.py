@@ -1,6 +1,6 @@
-from src.models.user import User, PhysicalData
-from src.models.sessions import UserCategorySession, DayPlan
 from src.models.category import Category
+from src.models.sessions import DayPlan, UserCategorySession
+from src.models.user import PhysicalData, User
 
 
 async def get_ai_progress_analysis_prompt(

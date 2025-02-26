@@ -1,7 +1,6 @@
-from pydantic import BaseModel
+from typing import Dict, List, Optional
 
 from pydantic import BaseModel
-from typing import List, Dict, Optional
 
 from src.models.sessions import DayStatus
 

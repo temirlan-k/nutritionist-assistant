@@ -1,12 +1,12 @@
 from bson import ObjectId
 from fastapi import HTTPException
-from src.schemas.req.category import CategoryCreateReq
-from src.models.category import Category
-from src.models.user import User, PhysicalData
+from fastapi.encoders import jsonable_encoder
+
 from src.helpers.jwt_handler import JWT
 from src.helpers.password import PasswordHandler
-
-from fastapi.encoders import jsonable_encoder
+from src.models.category import Category
+from src.models.user import PhysicalData, User
+from src.schemas.req.category import CategoryCreateReq
 
 
 class CategoryService:

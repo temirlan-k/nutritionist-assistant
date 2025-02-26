@@ -1,21 +1,21 @@
 from datetime import datetime
+from io import BytesIO
+from logging import getLogger
+from typing import Any, Dict, List, Optional
+
 from bson import ObjectId
 from fastapi import BackgroundTasks, HTTPException, Response
-from typing import List, Dict, Any, Optional
-from logging import getLogger
-from reportlab.lib.pagesizes import letter
 from reportlab.lib import colors
-from reportlab.lib.pagesizes import letter, landscape
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer
-from io import BytesIO
-from reportlab.lib import colors
-from reportlab.lib.styles import getSampleStyleSheet
-from io import BytesIO
-from src.models.category import Category
-from src.models.sessions import DayPlan, DayStatus, SessionStatus, UserCategorySession
-from src.models.user import PhysicalData, User
+from reportlab.lib.pagesizes import landscape, letter
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.platypus import (Paragraph, SimpleDocTemplate, Spacer, Table,
+                                TableStyle)
+
 from src.helpers.ai_schedule import AIScheduleGenerator
+from src.models.category import Category
+from src.models.sessions import (DayPlan, DayStatus, SessionStatus,
+                                 UserCategorySession)
+from src.models.user import PhysicalData, User
 from src.schemas.req.sessions import DayPlanUpdate, SessionCreateReq
 
 logger = getLogger(__name__)

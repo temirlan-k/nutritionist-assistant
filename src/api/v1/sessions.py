@@ -1,7 +1,7 @@
 from fastapi import APIRouter, BackgroundTasks, Depends
 
-from src.schemas.req.sessions import SessionCreateReq, DayPlanUpdate
 from src.core.auth_middleware import get_current_user
+from src.schemas.req.sessions import DayPlanUpdate, SessionCreateReq
 from src.service.sessions import UserCategorySessionService
 
 user_session_router = APIRouter()

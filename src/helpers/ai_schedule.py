@@ -1,17 +1,18 @@
 import asyncio
 import json
 import os
+from logging import getLogger
+from typing import Dict, List, Optional
+
 from openai import AsyncOpenAI
-from src.helpers.prompts.aI_schedule_analyzer import get_ai_progress_analysis_prompt
+
+from src.helpers.prompts.ai_schedule import (fetch_weekly_schedule_prompt,
+                                             get_ai_schedule_prompts)
+from src.helpers.prompts.aI_schedule_analyzer import \
+    get_ai_progress_analysis_prompt
 from src.models.category import Category
 from src.models.sessions import DayPlan, UserCategorySession
 from src.models.user import PhysicalData, User
-from typing import Dict, List, Optional
-from logging import getLogger
-from src.helpers.prompts.ai_schedule import (
-    get_ai_schedule_prompts,
-    fetch_weekly_schedule_prompt,
-)
 
 logger = getLogger(__name__)
 

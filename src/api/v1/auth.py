@@ -4,7 +4,6 @@ from src.core.auth_middleware import get_current_user
 from src.schemas.req.user import UserCreateReq, UserLoginReq
 from src.service.auth import AuthService
 
-
 auth_router = APIRouter()
 
 
