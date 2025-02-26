@@ -1,7 +1,16 @@
 from src.models.user import User, PhysicalData
 from src.models.sessions import UserCategorySession, DayPlan
 from src.models.category import Category
-async def get_ai_progress_analysis_prompt(user_data: UserCategorySession, category: Category, user: User, physical_data: PhysicalData, weight_after: int,day_plans) -> str:
+
+
+async def get_ai_progress_analysis_prompt(
+    user_data: UserCategorySession,
+    category: Category,
+    user: User,
+    physical_data: PhysicalData,
+    weight_after: int,
+    day_plans,
+) -> str:
     prompt = f"""
 You are an AI-powered fitness and nutrition analyst. Your task is to analyze the entire fitness and nutrition plan of a user, assess their progress, and provide structured insights.
 ## USER DETAILS:

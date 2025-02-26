@@ -1,5 +1,6 @@
 from pydantic import BaseModel
 
+
 class PhysicalDataCreateReq(BaseModel):
     weight: float
     height: float
@@ -13,9 +14,8 @@ class UserCreateReq(BaseModel):
     email: str
     password: str
     physical_data: PhysicalDataCreateReq | None = None
-    
-    
+
+
 class UserLoginReq(BaseModel):
     email: str
     password: str
-    

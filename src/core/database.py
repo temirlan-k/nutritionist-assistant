@@ -8,8 +8,12 @@ from src.models.sessions import UserCategorySession, DayPlan
 client = None
 db = None
 
+
 async def init_db():
     global client, db
-    client = AsyncIOMotorClient('mongodb://mongodb:27017/nutrition')
+    client = AsyncIOMotorClient("mongodb://mongodb:27017/nutrition")
     db = client.nutrition
-    await init_beanie(database=db, document_models=[User, PhysicalData, Category, UserCategorySession, DayPlan])
+    await init_beanie(
+        database=db,
+        document_models=[User, PhysicalData, Category, UserCategorySession, DayPlan],
+    )

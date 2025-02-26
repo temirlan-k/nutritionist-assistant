@@ -12,6 +12,7 @@ class SessionCreateReq(BaseModel):
     duration: int
     comments: str
 
+
 class DayPlanUpdate(BaseModel):
     meals: Optional[List[Dict]] = None
     workout: Optional[List[Dict]] = None

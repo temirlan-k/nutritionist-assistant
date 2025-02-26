@@ -10,6 +10,7 @@ class DayStatus(str, Enum):
     PARTIAL = "partial"
     NOT_DONE = "not_done"
 
+
 class SessionStatus(str, Enum):
     PENDING = "pending"
     PROCESSING = "processing"
@@ -17,9 +18,10 @@ class SessionStatus(str, Enum):
     ACTIVE = "active"
     FAILED = "failed"
 
+
 class DayPlan(Document):
-    month:Optional[str|int|None] = None
-    week:Optional[str|int|None ]= None
+    month: Optional[str | int | None] = None
+    week: Optional[str | int | None] = None
     day_number: int
     day_of_week: str
     date: datetime.datetime
@@ -31,7 +33,6 @@ class DayPlan(Document):
 
     class Settings:
         collection = "day_plans"
-
 
 
 class UserCategorySession(Document):

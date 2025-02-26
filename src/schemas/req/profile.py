@@ -1,12 +1,13 @@
 from pydantic import BaseModel, EmailStr, constr
 from typing import Optional
 
+
 class PhysicalDataUpdateReq(BaseModel):
     weight: Optional[float] = None
     height: Optional[float] = None
     age: Optional[int] = None
     blood_sugar: Optional[float] = None
-    BMI: Optional[float] = None 
+    BMI: Optional[float] = None
 
 
 class UserProfileUpdateReq(BaseModel):

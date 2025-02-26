@@ -6,10 +6,18 @@ from src.models.user import User, PhysicalData
 from src.models.category import Category
 
 
-async def get_ai_schedule_prompts(physical_data:PhysicalData, category: Category, goal: str, comments: str, duration: int, month: int, week: int) -> str:
+async def get_ai_schedule_prompts(
+    physical_data: PhysicalData,
+    category: Category,
+    goal: str,
+    comments: str,
+    duration: int,
+    month: int,
+    week: int,
+) -> str:
     # Convert duration to integer and validate
     months = min(int(duration), 3)  # Cap at 3 months
-    
+
     prompt = f"""
 You are an AI-powered professional nutritionist and fitness coach with expertise in personalized meal and workout planning.
 Your task is to generate a structured {months} month meal and fitness schedule based on the user's personal data and goals.
@@ -113,11 +121,20 @@ IMPORTANT VALIDATION RULES:
 """
     return prompt
 
-async def fetch_weekly_schedule_prompt(physical_data:PhysicalData, category: str, goal, comments, duration,current_month, current_week):
+
+async def fetch_weekly_schedule_prompt(
+    physical_data: PhysicalData,
+    category: str,
+    goal,
+    comments,
+    duration,
+    current_month,
+    current_week,
+):
     now = datetime.now()
-    days_until_monday = (7 - now.weekday()) % 7 
+    days_until_monday = (7 - now.weekday()) % 7
     start_date = now + timedelta(days=days_until_monday)
-    
+
     weeks_offset = (current_month - 1) * 4 + (current_week - 1)
     start_date += timedelta(weeks=weeks_offset)
 

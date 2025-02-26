@@ -1,4 +1,3 @@
-
 from beanie import Document, Link
 from typing import Optional
 
@@ -9,5 +8,3 @@ class Category(Document):
 
     class Settings:
         collection = "categories"
-
-

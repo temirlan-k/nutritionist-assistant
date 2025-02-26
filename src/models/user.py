@@ -4,6 +4,7 @@ from typing import Optional
 from bson import ObjectId
 import datetime
 
+
 class PhysicalData(Document):
     weight: float
     height: float
@@ -12,6 +13,7 @@ class PhysicalData(Document):
 
     class Settings:
         collection = "physical_data"
+
 
 class User(Document):
     first_name: str

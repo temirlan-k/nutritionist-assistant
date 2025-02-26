@@ -2,6 +2,7 @@
 
 from pymongo import ReturnDocument
 
+
 async def get_next_sequence(db, name: str) -> int:
     """
     Получает следующее значение счётчика из коллекции counters.
@@ -13,6 +14,6 @@ async def get_next_sequence(db, name: str) -> int:
         {"_id": name},
         {"$inc": {"seq": 1}},
         upsert=True,
-        return_document=ReturnDocument.AFTER
+        return_document=ReturnDocument.AFTER,
     )
     return ret["seq"]
