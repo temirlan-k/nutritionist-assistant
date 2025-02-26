@@ -21,8 +21,11 @@ class AuthService:
         )
         await user_db.insert()
         
-        return user_db
-
+        user_id = str(user_db.id)  
+        return {
+            'access_token': JWT.encode_access_token({"sub": user_id}),
+            'refresh_token': JWT.encode_refresh_token({"sub": user_id}),
+        }
     async def login(self, req: UserLoginReq):
         user = await User.find_one(User.email == req.email)
         if not user:
