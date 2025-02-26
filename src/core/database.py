@@ -15,5 +15,6 @@ async def init_db():
     db = client.nutrition
     await init_beanie(
         database=db,
-        document_models=[User, PhysicalData, Category, UserCategorySession, DayPlan],
+        document_models=[User, PhysicalData,
+                         Category, UserCategorySession, DayPlan],
     )

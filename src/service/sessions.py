@@ -45,7 +45,8 @@ class UserCategorySessionService:
                     session.error_message = error_message
 
                 await session.save()
-                logger.info(f"Session {session_id} status updated to: {status}")
+                logger.info(
+                    f"Session {session_id} status updated to: {status}")
         except Exception as e:
             logger.error(f"Failed to update session status: {e}")
             raise
@@ -81,7 +82,8 @@ class UserCategorySessionService:
             return day_plans
 
         except Exception as e:
-            logger.error(f"Error processing week data for session {session_id}: {e}")
+            logger.error(
+                f"Error processing week data for session {session_id}: {e}")
             raise HTTPException(
                 status_code=500, detail=f"Error processing schedule data: {str(e)}"
             )
@@ -113,7 +115,8 @@ class UserCategorySessionService:
             print(schedules)
             session = await UserCategorySession.find_one({"_id": ObjectId(session_id)})
             if not session:
-                raise HTTPException(status_code=404, detail="Session not found")
+                raise HTTPException(
+                    status_code=404, detail="Session not found")
 
             for week_schedule in schedules:
                 day_plans = await self.process_weekly_schedule(
@@ -121,7 +124,8 @@ class UserCategorySessionService:
                 )
                 for day_plan in day_plans:
                     if str(day_plan.id) not in session.ai_generated_plan_table_ids:
-                        session.ai_generated_plan_table_ids.append(str(day_plan.id))
+                        session.ai_generated_plan_table_ids.append(
+                            str(day_plan.id))
                 session.last_updated = datetime.utcnow()
                 await session.save()
 
@@ -148,7 +152,8 @@ class UserCategorySessionService:
 
             category = await Category.find_one({"_id": ObjectId(req.category_id)})
             if not category:
-                raise HTTPException(status_code=404, detail="Category not found")
+                raise HTTPException(
+                    status_code=404, detail="Category not found")
             session = UserCategorySession(
                 user_id=user_id,
                 category_id=req.category_id,
@@ -313,7 +318,8 @@ class UserCategorySessionService:
         )
 
         for (month, week), days in sorted(grouped_data.items()):
-            elements.append(Paragraph(f"Month {month} - Week {week}", styles["Title"]))
+            elements.append(
+                Paragraph(f"Month {month} - Week {week}", styles["Title"]))
 
             table_data = [
                 [
@@ -358,7 +364,8 @@ class UserCategorySessionService:
                     format_meal("dinner"),
                     Paragraph(str(day.total_calories), styles["TableCell"]),
                     workouts,
-                    Paragraph(str(day.total_calories_burned), styles["TableCell"]),
+                    Paragraph(str(day.total_calories_burned),
+                              styles["TableCell"]),
                     Paragraph(day.status.value, styles["TableCell"]),
                 ]
                 table_data.append(row)

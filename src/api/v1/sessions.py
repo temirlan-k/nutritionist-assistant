@@ -10,7 +10,8 @@ user_session_router = APIRouter()
 @user_session_router.get("/get")
 async def get_sessions(
     token: dict = Depends(get_current_user),
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.get_sessions(token.get("sub"))
 
@@ -20,7 +21,8 @@ async def create_session(
     req: SessionCreateReq,
     bg_tasks: BackgroundTasks,
     token: dict = Depends(get_current_user),
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.create_session(bg_tasks, token.get("sub"), req)
 
@@ -29,7 +31,8 @@ async def create_session(
 async def get_session_by_id(
     session_id: str,
     offset: int = 0,
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.get_session_by_id(session_id, offset)
 
@@ -39,7 +42,8 @@ async def update_session_day_plan(
     session_id: str,
     day_plan_id: str,
     req: DayPlanUpdate,
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.update_dayplan(session_id, day_plan_id, req)
 
@@ -49,7 +53,8 @@ async def compete_session(
     session_id: str,
     weight_after: float,
     token: dict = Depends(get_current_user),
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.complete_session(
         session_id, token.get("sub"), weight_after
@@ -59,6 +64,7 @@ async def compete_session(
 @user_session_router.get("/generate-pdf/{session_id}")
 async def generate_pdf(
     session_id: str,
-    session_service: UserCategorySessionService = Depends(UserCategorySessionService),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
 ):
     return await session_service.generate_pdf(session_id)
