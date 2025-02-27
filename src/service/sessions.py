@@ -179,8 +179,8 @@ class UserCategorySessionService:
                 status_code=500, detail=f"Failed to create session: {str(e)}"
             )
 
-    async def get_sessions(self, user_id: str):
-        sessions = await UserCategorySession.find({"user_id": user_id}).to_list()
+    async def get_sessions(self, user_id: str, status: str):
+        sessions = await UserCategorySession.find({"user_id": user_id,'status':status}).to_list()
         return sessions
 
     async def get_session_by_id(
@@ -267,6 +267,15 @@ class UserCategorySessionService:
         physical_data.weight = weight_after
         await session.save()
         return progress_analysis
+    
+
+    async def get_result_session(self,session_id: str, user_id:str,):
+        session = await UserCategorySession.find_one({"_id": ObjectId(session_id)})
+        if session is None:
+            raise HTTPException(status_code=404, detail="Session not found")
+        if user_id != session.user_id:
+            raise HTTPException(status_code=403,detail='Permission denied')
+        return session.result
 
     async def generate_pdf(self, session_id: str):
         session = await UserCategorySession.get(ObjectId(session_id))

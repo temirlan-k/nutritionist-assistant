@@ -10,6 +10,7 @@ class PhysicalData(Document):
     weight: float
     height: float
     age: int
+    blood_sugar:Optional[float] = None
     created_at: datetime.datetime = datetime.datetime.utcnow()
 
     class Settings:

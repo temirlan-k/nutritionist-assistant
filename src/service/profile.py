@@ -3,6 +3,7 @@ from bson import ObjectId
 from fastapi import HTTPException
 from fastapi.encoders import jsonable_encoder
 
+from src.models.sessions import SessionStatus, UserCategorySession
 from src.helpers.jwt_handler import JWT
 from src.helpers.password import PasswordHandler
 from src.models.user import PhysicalData, User
@@ -19,6 +20,11 @@ class ProfileService:
         ph_data = await PhysicalData.find_one(
             PhysicalData.id == PydanticObjectId(user.physical_data_id)
         )
+
+        total_sessions = await UserCategorySession.find({"user_id": user_id}).count()
+        active_sessions = await UserCategorySession.find({"user_id": user_id, "status": SessionStatus.ACTIVE}).count()
+        completed_sessions = await UserCategorySession.find({"user_id": user_id, "status": SessionStatus.COMPLETED}).count()
+
         return {
             "id": str(user.id),
             "email": user.email,
@@ -28,6 +34,12 @@ class ProfileService:
                 "weight": ph_data.weight,
                 "height": ph_data.height,
                 "age": ph_data.age,
+                "blood_sugar":ph_data.blood_sugar
+            },
+            "statistics": {
+                "total_sessions": total_sessions,
+                "active_sessions": active_sessions,
+                "completed_sessions": completed_sessions,
             },
         }
 

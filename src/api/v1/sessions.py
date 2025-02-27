@@ -1,5 +1,6 @@
 from fastapi import APIRouter, BackgroundTasks, Depends
 
+from src.models.sessions import SessionStatus
 from src.core.auth_middleware import get_current_user
 from src.schemas.req.sessions import DayPlanUpdate, SessionCreateReq
 from src.service.sessions import UserCategorySessionService
@@ -9,11 +10,12 @@ user_session_router = APIRouter()
 
 @user_session_router.get("/get")
 async def get_sessions(
+    status: SessionStatus,
     token: dict = Depends(get_current_user),
     session_service: UserCategorySessionService = Depends(
         UserCategorySessionService),
 ):
-    return await session_service.get_sessions(token.get("sub"))
+    return await session_service.get_sessions(token.get("sub"), status.value)
 
 
 @user_session_router.post("/create")
@@ -59,6 +61,19 @@ async def compete_session(
     return await session_service.complete_session(
         session_id, token.get("sub"), weight_after
     )
+
+@user_session_router.get("/result/{session_id}")
+async def get_result_session(
+    session_id: str,
+    token: dict = Depends(get_current_user),
+    session_service: UserCategorySessionService = Depends(
+        UserCategorySessionService),
+):
+    return await session_service.get_result_session(
+        session_id, token.get("sub"), 
+    )
+
+
 
 
 @user_session_router.get("/generate-pdf/{session_id}")
