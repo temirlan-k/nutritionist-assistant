@@ -37,12 +37,12 @@ class DayPlan(Document):
 
 
 class UserCategorySession(Document):
-    user_id: str  # Просто храним ObjectId пользователя
-    category_id: str  # Храним ObjectId категории
+    user_id: str  
+    category_id: str 
     goal: str
     progress: float = 0.0
     comments: str
-    ai_generated_plan_table_ids: List[str]  # Список ObjectId для DayPlan
+    ai_generated_plan_table_ids: List[str] 
     session_start: datetime.datetime = datetime.datetime.utcnow()
     session_end: Optional[datetime.datetime] = None
     status: SessionStatus = SessionStatus.PENDING
