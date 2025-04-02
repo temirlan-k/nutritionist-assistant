@@ -13,7 +13,7 @@ db = None
 
 async def init_db():
     global client, db
-    client = AsyncIOMotorClient("mongodb://mongodb:27017/nutrition")
+    client = AsyncIOMotorClient("mongodb+srv://admin:yBizVWOI2v1couIy@cluster0.djbpz07.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     db = client.nutrition
     await init_beanie(
         database=db,
