@@ -34,7 +34,10 @@ class ProfileService:
                 "weight": ph_data.weight,
                 "height": ph_data.height,
                 "age": ph_data.age,
-                "blood_sugar":ph_data.blood_sugar
+                "blood_sugar":ph_data.blood_sugar,
+                "activity_level":ph_data.activity_level,
+                "chronic_diseases":ph_data.chronic_diseases,
+                "gender":ph_data.gender
             },
             "statistics": {
                 "total_sessions": total_sessions,
@@ -75,6 +78,13 @@ class ProfileService:
                 physical_data.height = profile_data.physical_data.height
             if profile_data.physical_data.age is not None:
                 physical_data.age = profile_data.physical_data.age
+            if profile_data.physical_data.gender is not None:
+                physical_data.gender = profile_data.physical_data.gender
+            if profile_data.physical_data.chronic_diseases is not None:
+                physical_data.chronic_diseases = profile_data.physical_data.chronic_diseases
+            if profile_data.physical_data.activity_level is not None:
+                physical_data.activity_level = profile_data.physical_data.activity_level
+                
 
             await physical_data.save()
             user.physical_data_id = str(physical_data.id)

@@ -6,6 +6,10 @@ class PhysicalDataCreateReq(BaseModel):
     height: float
     age: int
     blood_sugar: float
+    chronic_diseases: str = None
+    activity_level: str = None
+    gender: str = None
+
 
 
 class UserCreateReq(BaseModel):

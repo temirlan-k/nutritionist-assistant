@@ -11,6 +11,11 @@ class PhysicalData(Document):
     height: float
     age: int
     blood_sugar:Optional[float] = None
+    chronic_diseases: str = None
+    activity_level: str = None
+    gender: str = None
+
+
     created_at: datetime.datetime = datetime.datetime.utcnow()
 
     class Settings:

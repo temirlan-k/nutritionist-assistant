@@ -58,6 +58,15 @@ Your analysis should be **comprehensive and data-driven**. Ensure accuracy and l
   - "Your longest consistent streak was **12 days** without missing a single workout!"
   - "You burned the most calories on **Week 3**, reaching **4500 kcal** in one week!"
 
+
+### 7. State Changes & Wellbeing
+- Describe how the user's condition has changed (e.g., energy level, mood, sleep, motivation), if available in the daily plans.
+- Indicate how well the user **complied with the meal plan**:
+  - Were there frequent deviations?
+  - Did the user follow the diet daily?
+  - What helped or hindered adherence?
+
+
 ## OUTPUT FORMAT:
 Return only a structured JSON object. Do not include additional text, explanations, or formatting, and wirhout ```json !!!.
 - Return a valid JSON object with no additional formatting or text
@@ -83,7 +92,15 @@ Return only a structured JSON object. Do not include additional text, explanatio
     "worst_week": "Week Y"
   }},
   "summary": "Short paragraph summarizing performance and suggestions.",
-  "fun_fact": "Interesting fact about the user's journey."
+  "fun_fact": "Interesting fact about the user's journey.",
+
+  "state_changes": {{  
+    "wellbeing_summary": "Brief description of how the user's condition changed (energy, mood, etc).",
+    "nutrition_adherence": "Description of how well the user followed the nutrition plan."
+  }}
+
+
 }}
 """
     return prompt
+

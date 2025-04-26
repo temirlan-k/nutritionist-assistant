@@ -9,8 +9,8 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import landscape, letter
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.platypus import (Paragraph, SimpleDocTemplate, Spacer, Table,
-                                TableStyle)
-
+                                TableStyle,)
+from reportlab.lib.enums import TA_CENTER
 from src.helpers.ai_schedule import AIScheduleGenerator
 from src.models.category import Category
 from src.models.sessions import (DayPlan, DayStatus, SessionStatus,
@@ -422,6 +422,31 @@ class UserCategorySessionService:
                     styles["Normal"],
                 )
             )
+            summary_data = session.summary_table
+            if summary_data:
+                table_data = [["Metric", "Value"]] + [[metric, str(value)] for metric, value in summary_data.items()]
+
+                # Create the table
+                summary_table = Table(table_data, hAlign='CENTER')
+
+                table_style = TableStyle([
+                    ("BACKGROUND", (0, 0), (-1, 0), colors.grey),
+                    ("TEXTCOLOR", (0, 0), (-1, 0), colors.whitesmoke),
+                    ("ALIGN", (0, 0), (-1, -1), "CENTER"),  # Align all cells to the center
+                    ("FONTNAME", (0, 0), (-1, 0), "Helvetica-Bold"),
+                    ("FONTSIZE", (0, 0), (-1, -1), 8),
+                    ("BOTTOMPADDING", (0, 0), (-1, 0), 12),
+                    ("GRID", (0, 0), (-1, -1), 1, colors.black),
+                    ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),  # Vertically center the text
+                ])
+
+                summary_table.setStyle(table_style)
+
+                # Create a centered title for the Summary Table
+                styles = getSampleStyleSheet()
+               
+                elements.append(Spacer(1, 20))
+                elements.append(summary_table)                        
 
         pdf.build(elements)
         buffer.seek(0)

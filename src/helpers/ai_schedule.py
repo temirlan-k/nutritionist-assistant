@@ -11,7 +11,7 @@ from src.helpers.prompts.ai_schedule import (fetch_weekly_schedule_prompt,
 from src.helpers.prompts.aI_schedule_analyzer import \
     get_ai_progress_analysis_prompt
 from src.models.category import Category
-from src.models.sessions import DayPlan, UserCategorySession
+from src.models.sessions import DayPlan, DayStatus, UserCategorySession
 from src.models.user import PhysicalData, User
 
 logger = getLogger(__name__)
@@ -58,6 +58,14 @@ class AIScheduleGenerator:
 
             response = completion.choices[0].message.content
             analysis = json.loads(response)
+
+            summary_table = {
+                "Weight Change (kg)": round(weight_after - physical_data.weight, 1),
+                "Total Days Completed": len([day for day in day_plans if day.status == DayStatus.FULL]),
+                "Total Skipped Days": len([day for day in day_plans if day.status == DayStatus.NOT_DONE]),
+            }
+
+            user_data.summary_table = summary_table
 
             return analysis
 

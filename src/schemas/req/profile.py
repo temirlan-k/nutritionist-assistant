@@ -8,6 +8,10 @@ class PhysicalDataUpdateReq(BaseModel):
     height: Optional[float] = None
     age: Optional[int] = None
     blood_sugar: Optional[float] = None
+    chronic_diseases: Optional[str] = None
+    activity_level: Optional[str] = None
+    gender: Optional[str] = None
+
 
 
 class UserProfileUpdateReq(BaseModel):

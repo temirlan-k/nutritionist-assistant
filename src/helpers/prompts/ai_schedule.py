@@ -145,8 +145,7 @@ You are an AI-powered nutritionist and fitness coach. Generate a structured plan
 - Goal: {goal}
 - Category: {category}
 - Restrictions/Comments: {comments}
-- Physical Data: {physical_data.weight}kg, {physical_data.height}cm, {physical_data.age} years old
-
+- Physical Data: {physical_data.weight}kg, {physical_data.height}cm, {physical_data.age} years old, {physical_data.gender} gender, {physical_data.activity_level} activity level, {physical_data.chronic_diseases} chronic_diseases 
 ## Schedule Requirements:
 - Generate a detailed 7-day plan (1 week).
 - The first day must be Monday ({start_date.strftime('%Y-%m-%d')}).

@@ -49,6 +49,7 @@ class UserCategorySession(Document):
     error_message: Optional[str] = None
     last_updated: datetime.datetime = datetime.datetime.utcnow()
     result: Optional[Any] = None
+    summary_table: Optional[Any] = None
 
     class Settings:
         collection = "user_category_sessions"
